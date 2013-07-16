@@ -16,6 +16,11 @@
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
+	<g:javascript>
+		$(function(){
+			console.log("Jquery");
+		});
+	</g:javascript>
 	<body>
 		<header>
 			
