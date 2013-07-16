@@ -11,18 +11,21 @@
 		<meta name = "description" content="entuliga"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}" type="image/x-icon">
-		<!--link rel="stylesheet" type="text/css" href="${resource(dir:'css', file:'normalize.css')}"-->
-		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">
-		
+		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">		
 		<g:javascript src="jquery-1.9.0.js"/>
-		<!--g:javascript src="lte-ie7.js"/-->
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
 	<body>
-		
-
-		<g:layoutBody/>
+		<header>
+			
+		</header>
+		<section id="wrapper">
+			<g:layoutBody/>
+		</section>
+		<footer>
+			
+		</footer>
 		<g:javascript library="application"/>
 		<r:layoutResources />
 	</body>
