@@ -8,15 +8,20 @@
 		<title>Ideas y Negocios</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name = "description" content="entuliga"/>
+		<meta name = "description" content="ideasynegocios"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'apple-touch-icon.png')}" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'reset.css')}">
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'navMenu.css')}">
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">
-		<!-- <g:javascript src="jquery.min.js"/> -->
-		<g:javascript src="jquery-ui.min.js"/>
-		<g:javascript src="jquery-1.9.0.js"/>
+		<g:javascript src="jquery.min.js"/>
+		<!--g:javascript src="jquery-ui.min.js"/-->
+		<!--g:javascript src="jquery-1.9.0.js"/-->
+		<g:javascript src="jquery.plugins.js"/>
+		<g:javascript src="jquery.colorbox.js"/>
+		<g:javascript src="jquery.cross-slide.js"/>
+		<g:javascript src="jquery.onePageMenu.js"/>
+		<g:javascript src="jquery.scripts.js"/>
 		<g:layoutHead/>
 		<r:layoutResources />
 	</head>
@@ -85,11 +90,7 @@
 		<g:javascript library="application"/>
 		<r:layoutResources />
 
-		<g:javascript src="jquery.plugins.js"/>
-		<g:javascript src="jquery.colorbox.js"/>
-		<g:javascript src="jquery.cross-slide.js"/>
-		<g:javascript src="jquery.onePageMenu.js"/>
-		<g:javascript src="jquery.scripts.js"/>
+		
 
 	</body>
 </html>
