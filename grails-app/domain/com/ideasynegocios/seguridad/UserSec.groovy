@@ -1,6 +1,6 @@
 package com.ideasynegocios.seguridad
 
-class UserSec {
+class UserSec extends Persona{
 
 	transient springSecurityService
 
