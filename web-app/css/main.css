@@ -1,119 +1,76 @@
-@font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format('embedded-opentype'), url("../fonts/icomoon.woff") format('woff'), url("../fonts/icomoon.ttf") format('truetype'), url("../fonts/icomoon.svg#icomoon") format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-[data-icon]:before {
-  font-family: 'icomoon';
-  content: attr(data-icon);
-  speak: none;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-.icon-aid,
-.icon-tags,
-.icon-wrench,
-.icon-library,
-.icon-food,
-.icon-gift,
-.icon-star,
-.icon-dribbble,
-.icon-omega,
-.icon-accessibility,
-.icon-user,
-.icon-bubble,
-.icon-bubbles,
-.icon-cog,
-.icon-shield,
-.icon-github,
-.icon-cart,
-.icon-users,
-.icon-switch,
-.icon-strikethrough,
-.icon-leaf,
-.icon-truck {
-  font-family: 'icomoon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-.icon-aid:before {
-  content: "\e001";
-}
-.icon-tags:before {
-  content: "\e002";
-}
-.icon-wrench:before {
-  content: "\e004";
-}
-.icon-library:before {
-  content: "\e005";
-}
-.icon-food:before {
-  content: "\e006";
-}
-.icon-gift:before {
-  content: "\e008";
-}
-.icon-star:before {
-  content: "\e009";
-}
-.icon-dribbble:before {
-  content: "\e00a";
-}
-.icon-omega:before {
-  content: "\e003";
-}
-.icon-accessibility:before {
-  content: "\e00b";
-}
-.icon-user:before {
-  content: "\e00c";
-}
-.icon-bubble:before {
-  content: "\e00d";
-}
-.icon-bubbles:before {
-  content: "\e00e";
-}
-.icon-cog:before {
-  content: "\e007";
-}
-.icon-shield:before {
-  content: "\e00f";
-}
-.icon-github:before {
-  content: "\e010";
-}
-.icon-cart:before {
-  content: "\e000";
-}
-.icon-users:before {
-  content: "\e011";
-}
-.icon-switch:before {
-  content: "\e012";
-}
-.icon-strikethrough:before {
-  content: "\e013";
-}
-.icon-leaf:before {
-  content: "\e014";
-}
-.icon-truck:before {
-  content: "\e015";
-}
-* {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
+#informacion #apartado #banner{background-color:#702023;border-radius:10px;height:130px;width:100%;}
+#informacion #apartado #banner img{border-radius:10px;height:130px;width:100%}
+#informacion #apartado .recuadro{border-bottom-left-radius:10px;border-bottom-right-radius:10px;display:inline-block;margin-top:5px;margin-right:5px;height:240px;width:217px;}
+#informacion #apartado .recuadro #contenido{background-color:#000;height:190px;width:100%;}
+#informacion #apartado .recuadro #contenido img{width:217px;height:190px}
+#informacion #apartado .recuadro #pieEducacion{background-color:#006f32;border-bottom-left-radius:10px;border-bottom-right-radius:10px;height:50px;width:217px;-webkit-transition:all 1s ease;position:absolute;}
+#informacion #apartado .recuadro #pieEducacion img{background-size:40px;background-color:#fff;border-radius:10px;display:inline-block;height:40px;margin-top:5px;margin-left:5px;width:40px}
+#informacion #apartado .recuadro #pieEducacion .titulo{width:130px;height:35px;display:inline-block;padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;vertical-align:top}
+#informacion #apartado .recuadro #pieEducacion a{text-decoration:none;font-size:0;margin-top:-5em;}
+#informacion #apartado .recuadro #pieEducacion a .link{background:#174e6d;border-radius:0;margin:0 auto;width:0;height:0;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieEducacion .otra{font-size:0}
+#informacion #apartado .recuadro #pieEducacion:hover{background-color:rgba(0,111,50,0.9);margin-top:-13em;height:230px;}
+#informacion #apartado .recuadro #pieEducacion:hover .titulo{padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieEducacion:hover a{color:#fff;text-decoration:none;font-size:20px;-webkit-transition:all .1s ease;}
+#informacion #apartado .recuadro #pieEducacion:hover a .link{background:#06351a;border-radius:50px;margin:20px auto;width:90px;height:55px;padding-top:35px;text-align:center;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieEducacion:hover a .link:hover{background:#25f27c}
+#informacion #apartado .recuadro #pieEducacion:hover .otra{text-align:center;font-size:20px;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieConstruccion{background-color:#f8e400;border-bottom-left-radius:10px;border-bottom-right-radius:10px;height:50px;width:217px;-webkit-transition:all 1s ease;position:absolute;}
+#informacion #apartado .recuadro #pieConstruccion img{background-size:40px;background-color:#fff;border-radius:10px;display:inline-block;height:40px;margin-top:5px;margin-left:5px;width:40px}
+#informacion #apartado .recuadro #pieConstruccion .titulo{width:150px;height:35px;display:inline-block;padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;vertical-align:top}
+#informacion #apartado .recuadro #pieConstruccion a{text-decoration:none;font-size:0;margin-top:-5em;}
+#informacion #apartado .recuadro #pieConstruccion a .link{background:#174e6d;border-radius:0;margin:0 auto;width:0;height:0;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieConstruccion .otra{font-size:0}
+#informacion #apartado .recuadro #pieConstruccion:hover{background-color:rgba(248,228,0,0.9);margin-top:-13em;height:230px;}
+#informacion #apartado .recuadro #pieConstruccion:hover .titulo{padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieConstruccion:hover a{color:#fff;text-decoration:none;font-size:20px;-webkit-transition:all .1s ease;}
+#informacion #apartado .recuadro #pieConstruccion:hover a .link{background:#a3940a;border-radius:50px;margin:20px auto;width:90px;height:55px;padding-top:35px;text-align:center;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieConstruccion:hover a .link:hover{background:#fff48a}
+#informacion #apartado .recuadro #pieConstruccion:hover .otra{text-align:center;font-size:20px;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieDeportes{background-color:#1c1c1b;border-bottom-left-radius:10px;border-bottom-right-radius:10px;height:50px;width:217px;-webkit-transition:all 1s ease;position:absolute;}
+#informacion #apartado .recuadro #pieDeportes img{background:url("../images/categoria/logos/deportes1.png") no-repeat;background-size:40px;background-color:#fff;border-radius:10px;display:inline-block;height:40px;margin-top:5px;margin-left:5px;width:40px}
+#informacion #apartado .recuadro #pieDeportes .titulo{width:140px;height:35px;display:inline-block;padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;vertical-align:top}
+#informacion #apartado .recuadro #pieDeportes a{text-decoration:none;font-size:0;margin-top:-5em;}
+#informacion #apartado .recuadro #pieDeportes a .link{background:#174e6d;border-radius:0;margin:0 auto;width:0;height:0;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieDeportes .otra{font-size:0}
+#informacion #apartado .recuadro #pieDeportes:hover{background-color:rgba(8,28,27,0.9);margin-top:-13em;height:230px;}
+#informacion #apartado .recuadro #pieDeportes:hover .titulo{padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieDeportes:hover a{color:#fff;text-decoration:none;font-size:20px;-webkit-transition:all .1s ease;}
+#informacion #apartado .recuadro #pieDeportes:hover a .link{background:#5b5b59;border-radius:50px;margin:20px auto;width:90px;height:55px;padding-top:35px;text-align:center;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieDeportes:hover a .link:hover{background:#f4f4f2}
+#informacion #apartado .recuadro #pieDeportes:hover .otra{text-align:center;font-size:20px;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieModaBelleza{background-color:#b41470;border-bottom-left-radius:10px;border-bottom-right-radius:10px;height:50px;width:217px;-webkit-transition:all 1s ease;position:absolute;}
+#informacion #apartado .recuadro #pieModaBelleza img{background:url("../images/categoria/logos/modaBelleza1.png") no-repeat;background-size:40px;background-color:#fff;border-radius:10px;display:inline-block;height:40px;margin-top:5px;margin-left:5px;width:40px}
+#informacion #apartado .recuadro #pieModaBelleza .titulo{width:160px;height:35px;display:inline-block;padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;vertical-align:top}
+#informacion #apartado .recuadro #pieModaBelleza a{text-decoration:none;font-size:0;margin-top:-5em;}
+#informacion #apartado .recuadro #pieModaBelleza a .link{background:#174e6d;border-radius:0;margin:0 auto;width:0;height:0;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieModaBelleza .otra{font-size:0}
+#informacion #apartado .recuadro #pieModaBelleza:hover{background-color:rgba(180,20,112,0.9);margin-top:-13em;height:230px;}
+#informacion #apartado .recuadro #pieModaBelleza:hover .titulo{padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:20px;font-weight:bold;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieModaBelleza:hover a{color:#fff;text-decoration:none;font-size:20px;-webkit-transition:all .1s ease;}
+#informacion #apartado .recuadro #pieModaBelleza:hover a .link{background:#600d40;border-radius:50px;margin:20px auto;width:90px;height:55px;padding-top:35px;text-align:center;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieModaBelleza:hover a .link:hover{background:#f21ca0}
+#informacion #apartado .recuadro #pieModaBelleza:hover .otra{text-align:center;font-size:20px;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieSaludMedicina{background-color:#2483c5;border-bottom-left-radius:10px;border-bottom-right-radius:10px;height:50px;width:217px;-webkit-transition:all 1s ease;position:absolute;}
+#informacion #apartado .recuadro #pieSaludMedicina img{background:url("../images/categoria/logos/saludMedicina1.png") no-repeat;background-size:40px;background-color:#fff;border-radius:10px;display:inline-block;height:40px;margin-top:5px;margin-left:5px;width:40px}
+#informacion #apartado .recuadro #pieSaludMedicina .titulo{width:160px;height:35px;display:inline-block;padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:16px;font-weight:bold;vertical-align:top}
+#informacion #apartado .recuadro #pieSaludMedicina a{text-decoration:none;font-size:0;margin-top:-5em;}
+#informacion #apartado .recuadro #pieSaludMedicina a .link{background:#174e6d;border-radius:0;margin:0 auto;width:0;height:0;-webkit-transition:all 1s ease;}
+#informacion #apartado .recuadro #pieSaludMedicina a .link p{text-decoration:none;font-size:0;color:#2483c5;margin:0;margin-top:0;padding:0}
+#informacion #apartado .recuadro #pieSaludMedicina .otra{font-size:0;color:#2483c5}
+#informacion #apartado .recuadro #pieSaludMedicina:hover{background-color:rgba(36,131,197,0.9);margin-top:-13em;height:230px;}
+#informacion #apartado .recuadro #pieSaludMedicina:hover .titulo{padding-top:15px;margin:0;margin-left:5px;text-align:center;font-size:16px;font-weight:bold;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieSaludMedicina:hover a{color:#fff;text-decoration:none;font-size:20px;-webkit-transition:all .1s ease;}
+#informacion #apartado .recuadro #pieSaludMedicina:hover a .link{background:#174e6d;border-radius:50px;margin:20px auto;width:90px;height:55px;padding-top:35px;text-align:center;-webkit-transition:all 1s ease}
+#informacion #apartado .recuadro #pieSaludMedicina:hover a .link:hover{background:#34b2ea}
+#informacion #apartado .recuadro #pieSaludMedicina:hover .otra{color:#fff;text-align:center;font-size:20px;-webkit-transition:all 1s ease}
+#informacion #apartado1 .titulo2{margin-top:20px;margin-bottom:20px;text-align:center;color:#000;font-size:24px}
+#informacion #apartado1 #contenedorCategorias{margin:0 auto 0 auto;width:850px;}
+#informacion #apartado1 #contenedorCategorias .categoria{border-right:2px solid #808080;border-bottom:2px solid #808080;display:inline-block;height:50px;margin:0 auto 0 auto;margin-right:15px;margin-bottom:10px;width:260px;}
+#informacion #apartado1 #contenedorCategorias .categoria #hoverConstruccion{display:inline-block;background-color:#fff;border-radius:5px;height:50px;width:50px}
+#informacion #apartado1 #contenedorCategorias .categoria #hoverConstruccion:hover{background:#f8e400;border:1px solid #fff;height:48px;width:48px}
+#informacion #apartado1 #contenedorCategorias .categoria #hoverDeportes{display:inline-block;background:url("../images/categoria/logos/deportes1.png");background-size:50px;background-color:#fff;border-radius:5px;border:1px solid #000;height:48px;width:48px}
+#informacion #apartado1 #contenedorCategorias .categoria #hoverDeportes:hover{background:url("../images/categoria/logos/deportes2.png") no-repeat;background-size:50px;border:1px solid #fff;height:48px;width:48px}
+#informacion #apartado1 #contenedorCategorias .categoria #hoverEducacion{display:inline-block;background:url("../images/categoria/logos/educacion1.png");background-size:48px;border-radius:5px;border:1px solid #006f32;height:48px;width:48px}
+#informacion #apartado1 #contenedorCategorias .categoria #hoverEducacion:hover{background:url("../images/categoria/logos/educacion2.png") no-repeat;background-size:48px;border:1px solid #fff;height:48px;width:48px}
+#informacion #apartado1 #contenedorCategorias .categoria .informacionCategoria{display:inline-block;vertical-align:top;text-align:right;margin-top:30px;font-size:20px;color:#000;width:190px}
