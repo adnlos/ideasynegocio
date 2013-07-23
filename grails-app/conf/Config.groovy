@@ -94,3 +94,24 @@ log4j = {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.ideasynegocios.seguridad.UserSec'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.ideasynegocios.seguridad.UserSecRoleSec'
 grails.plugins.springsecurity.authority.className = 'com.ideasynegocios.seguridad.RoleSec'
+grails.plugins.springsecurity.requestMap.className = 'com.ideasynegocios.seguridad.Requestmap'
+grails.plugins.springsecurity.securityConfigType = 'Requestmap'
+
+grails {
+   mail {
+     host = "smtp.gmail.com"
+     port = 465
+     username = "mail-noreply@ideasynegocios.mx"
+     password = "cuentasuscripcion"
+     props = ["mail.smtp.auth":"true",             
+              "mail.smtp.socketFactory.port":"465",
+              "mail.smtp.socketFactory.class":"javax.net.ssl.SSLSocketFactory",
+              "mail.smtp.socketFactory.fallback":"false"]
+   }
+}
+
+grails.plugins.springsecurity.ui.register.emailBody = 'Bienvenido ${user} puedes validar en el siguiente link tu suscripción ${url}'
+grails.plugins.springsecurity.ui.register.emailFrom = 'betotsol@gmail.com'
+grails.plugins.springsecurity.ui.register.emailSubject = 'Bienvenido a Ideas y Negocios'
+
+grails.mail.default.from="mail-noreply@ideasynegocios.mx"
