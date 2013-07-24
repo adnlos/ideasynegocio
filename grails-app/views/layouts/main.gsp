@@ -14,9 +14,8 @@
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'reset.css')}">
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'navMenu.css')}">
 		<link rel="stylesheet" type="text/css" href="${resource(dir: 'css', file: 'main.css')}">
-		<g:javascript src="jquery.min.js"/>
 		<!--g:javascript src="jquery-ui.min.js"/-->
-		<!--g:javascript src="jquery-1.9.0.js"/-->
+		<g:javascript src="jquery-1.9.0.js"/>
 		<g:javascript src="jquery.plugins.js"/>
 		<g:javascript src="jquery.colorbox.js"/>
 		<g:javascript src="jquery.cross-slide.js"/>

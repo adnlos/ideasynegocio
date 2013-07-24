@@ -16,10 +16,13 @@ class NegocioController {
     }
 
     def create() {
+        log.debug "nuevo negocio"
         [negocioInstance: new Negocio(params)]
     }
 
     def save() {
+        println params
+        log.debug "este es un log"
         def negocioInstance = new Negocio(params)
         if (!negocioInstance.save(flush: true)) {
             render(view: "create", model: [negocioInstance: negocioInstance])
