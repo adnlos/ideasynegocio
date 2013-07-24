@@ -175,6 +175,14 @@
 		<g:message code="negocio.imagenPrincipal.label" default="Imagen Principal" />
 		
 	</label>
-	<g:select id="imagenPrincipal" name="imagenPrincipal.id" from="${com.ideasynegocios.general.Imagen.list()}" optionKey="id" value="${negocioInstance?.imagenPrincipal?.id}" class="many-to-one" noSelection="['null': '']"/>
+	<g:select id="imagenPrincipal" name="imagenPrincipal.id" from="${com.ideasynegocios.business.ImagenNegocio.list()}" optionKey="id" value="${negocioInstance?.imagenPrincipal?.id}" class="many-to-one" noSelection="['null': '']"/>
+</div>
+
+<div class="fieldcontain ${hasErrors(bean: negocioInstance, field: 'imagenSecundaria', 'error')} ">
+	<label for="imagenSecundaria">
+		<g:message code="negocio.imagenSecundaria.label" default="Imagen Secundaria" />
+		
+	</label>
+	<g:select id="imagenSecundaria" name="imagenSecundaria.id" from="${com.ideasynegocios.business.ImagenNegocio.list()}" optionKey="id" value="${negocioInstance?.imagenSecundaria?.id}" class="many-to-one" noSelection="['null': '']"/>
 </div>
 
