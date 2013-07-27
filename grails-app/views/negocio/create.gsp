@@ -26,8 +26,8 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
-			<g:form action="save" enctype="multipart/form-data" >
-				<fieldset class="form">				
+			<g:form action="save" controller="negocio" enctype="multipart/form-data">
+				<fieldset class="form">
 					<div class="fieldcontain ${hasErrors(bean: negocioInstance, field: 'nombre', 'error')} required">
 						<label for="nombre">
 							<g:message code="negocio.nombre.label" default="Nombre" />
@@ -196,21 +196,13 @@
 						<g:textField name="facebook" value="${negocioInstance?.facebook}"/>
 					</div>
 
-					imagenes
-					<div class="fieldcontain ${hasErrors(bean: negocioInstance, field: 'imagenPrincipal', 'error')} ">
-					<label for="imagenPrincipal">
-						<g:message code="negocio.imagenPrincipal.label" default="Imagen Principal" />
-					</label>
-					<input type="file" name="imagenPrincipal" id="imagenPrincipal">
-					</div>
-
-					<div class="fieldcontain ${hasErrors(bean: negocioInstance, field: 'imagenSecundaria', 'error')} ">
-						<label for="imagenSecundaria">
-							<g:message code="negocio.imagenSecundaria.label" default="Imagen Secundaria" />
-						</label>
-						<input type="file" name="imagenSecundaria" id="imagenSecundaria">
-					</div>
-
+					<div>
+	                    <label for="imagenPrincipal">
+	                        <g:message code="negocio.imagenPrincipal.label" default="Imagen Principal" />
+	                    </label>
+                    	<input type="file" name="imagenPrincipal" id="imagenPrincipal">
+                    </div>
+					
 				</fieldset>
 				<fieldset class="buttons">
 					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />

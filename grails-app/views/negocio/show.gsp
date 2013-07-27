@@ -212,20 +212,13 @@
 				</li>
 				</g:if>
 			
-				<g:if test="${negocioInstance?.imagenPrincipal}">
+				<g:if test="${negocioInstance?.imagenes}">
 				<li class="fieldcontain">
-					<span id="imagenPrincipal-label" class="property-label"><g:message code="negocio.imagenPrincipal.label" default="Imagen Principal" /></span>
+					<span id="imagenes-label" class="property-label"><g:message code="negocio.imagenes.label" default="Imagenes" /></span>
 					
-						<span class="property-value" aria-labelledby="imagenPrincipal-label"><g:link controller="imagenNegocio" action="show" id="${negocioInstance?.imagenPrincipal?.id}">${negocioInstance?.imagenPrincipal?.encodeAsHTML()}</g:link></span>
-					
-				</li>
-				</g:if>
-			
-				<g:if test="${negocioInstance?.imagenSecundaria}">
-				<li class="fieldcontain">
-					<span id="imagenSecundaria-label" class="property-label"><g:message code="negocio.imagenSecundaria.label" default="Imagen Secundaria" /></span>
-					
-						<span class="property-value" aria-labelledby="imagenSecundaria-label"><g:link controller="imagenNegocio" action="show" id="${negocioInstance?.imagenSecundaria?.id}">${negocioInstance?.imagenSecundaria?.encodeAsHTML()}</g:link></span>
+						<g:each in="${negocioInstance.imagenes}" var="i">
+						<span class="property-value" aria-labelledby="imagenes-label"><g:link controller="imagen" action="show" id="${i.id}">${i?.encodeAsHTML()}</g:link></span>
+						</g:each>
 					
 				</li>
 				</g:if>

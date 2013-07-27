@@ -32,8 +32,6 @@
 					
 						<g:sortableColumn property="archivo" title="${message(code: 'imagenNegocio.archivo.label', default: 'Archivo')}" />
 					
-						<th><g:message code="imagenNegocio.negocio.label" default="Negocio" /></th>
-					
 					</tr>
 				</thead>
 				<tbody>
@@ -48,7 +46,7 @@
 					
 						<td>${fieldValue(bean: imagenNegocioInstance, field: "archivo")}</td>
 					
-						<td>${fieldValue(bean: imagenNegocioInstance, field: "negocio")}</td>
+					
 					
 					</tr>
 				</g:each>

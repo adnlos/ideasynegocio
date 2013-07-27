@@ -1,4 +1,5 @@
 package com.ideasynegocios.business
+import com.ideasynegocios.general.*
 
 import org.springframework.dao.DataIntegrityViolationException
 
@@ -16,14 +17,33 @@ class NegocioController {
     }
 
     def create() {
-        log.debug "nuevo negocio"
         [negocioInstance: new Negocio(params)]
     }
 
     def save() {
-        println params
-        log.debug "este es un log"
         def negocioInstance = new Negocio(params)
+        
+        def imgPrincipal = request.getFile('imagenPrincipal')
+        if (!imgPrincipal.empty) {
+            byte[] f = imgPrincipal.getBytes()
+             log.debug "*################ " + imgPrincipal.originalFilename + imgPrincipal.contentType +imgPrincipal.size  + imgPrincipal
+            def imagenPri = new Imagen(
+                nombre : imgPrincipal.originalFilename
+                , tipoContenido : imgPrincipal.contentType
+                , tamano : imgPrincipal.size
+                , archivo : imgPrincipal
+            )
+
+            if (negocioInstance.imagenes) {
+                negocioInstance.imagenes?.clear()
+            } else {
+                negocioInstance.imagenes = []
+            }
+
+            negocioInstance.imagenes << imagenPri
+        }
+
+
         if (!negocioInstance.save(flush: true)) {
             render(view: "create", model: [negocioInstance: negocioInstance])
             return
@@ -101,5 +121,10 @@ class NegocioController {
             flash.message = message(code: 'default.not.deleted.message', args: [message(code: 'negocio.label', default: 'Negocio'), id])
             redirect(action: "show", id: id)
         }
+    }
+
+
+    def infoNegocio = {
+        log.debug "params" + params
     }
 }
