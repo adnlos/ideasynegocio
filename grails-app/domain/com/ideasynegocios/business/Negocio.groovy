@@ -25,8 +25,6 @@ class Negocio {
 	UserSec personaRecluto
 	String estadoAdmin
 	String facebook
-	//ImagenNegocio imagenPrincipal
-	//ImagenNegocio imagenSecundaria
 	static hasMany = [imagenes: Imagen]
 	
 	String getDireccionCompleta() { 
@@ -58,8 +56,6 @@ class Negocio {
 		contactoNegocio blank:true, nullable:true
 		personaRecluto blank:true, nullable:true
 		facebook blank:true, nullable:true
-		//imagenPrincipal blank:true, nullable:true
-		//imagenSecundaria blank:true, nullable:true
 	}
 
 	String toString(){

@@ -27,7 +27,8 @@
 									<div class="titulo">Educación</div>
 									<a href="">
 										<div class="link">
-										   Link
+										   <g:link controller="negocio" action="infoNegocio" id="ideasynegocio"> este es un link ideasynegocio
+											</g:link>	
 										</div>
 									</a>
 									<div class="otra">Otra cosa</div>
@@ -42,7 +43,10 @@
 									<div class="titulo">Construcción</div>
 									<a href="">
 										<div class="link">
-										   Link
+											<div class="link">
+												<g:link controller="negocio" action="infoNegocio" id="hola"> este es un link ideasynegocio
+											</g:link>	
+											</div>
 										</div>
 									</a>
 									<div class="otra">Otra cosa</div>
