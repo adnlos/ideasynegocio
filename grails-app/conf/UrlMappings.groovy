@@ -7,18 +7,10 @@ class UrlMappings {
 			}
 		}
 
-        "/"{
-            controller= 'inicio' 
-            action= 'index'
-        }
-
-		"/$id?"{
-            controller= 'negocio' 
-            action= 'infoNegocio'
-        }
+		"/$id?"(controller: 'negocio', action: 'infoNegocio')
 
 
-		//"/"(view:"/index")
+		"/" (controller:"inicio", action:"index")
 		"500"(view:'/error')
 	}
 }

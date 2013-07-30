@@ -167,7 +167,7 @@ class NegocioController {
                     , archivo : file.getBytes()
                 )
             }**/
-
+            response.setHeader("Content-disposition", "attachment; filename=${foto?.nombre}") 
             response.contentType = foto.tipoContenido
             response.contentLength = foto.tamano
             response.outputStream << foto.archivo
